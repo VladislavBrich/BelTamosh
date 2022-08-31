@@ -19,10 +19,11 @@ public class ResumeServiceImpl implements ResumeService {
     private final ResumeRepo resumeRepo;
     private final SetCategoriesService setCategoriesService;
     private final ResumeMapper resumeMapper;
-/**
- * The method takes a ResumeRequestDto object, checks by the name field whether such an object already exists, then
- * the object passes validation for belonging to one of the categories, and is converted into a Resume object
- * **/
+
+    /**
+     * The method takes a ResumeRequestDto object, checks by the name field whether such an object already exists, then
+     * the object passes validation for belonging to one of the categories, and is converted into a Resume object
+     **/
     @Override
     public void sendResume(ResumeRequestDto resumeRequestDto, Model model) {
         existByName(resumeRequestDto.getFullName());

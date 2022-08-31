@@ -1,7 +1,6 @@
 package com.example.beltamosh.repositories;
 
 import com.example.beltamosh.models.Resume;
-import com.example.beltamosh.models.Skill;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

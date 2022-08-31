@@ -2,7 +2,6 @@ package com.example.beltamosh.services.impl;
 
 import com.example.beltamosh.exception.BadRequestException;
 import com.example.beltamosh.exception.NotFoundException;
-import com.example.beltamosh.models.BadCompany;
 import com.example.beltamosh.models.BadEmployee;
 import com.example.beltamosh.repositories.BadEmployeeRepo;
 import com.example.beltamosh.services.BadEmployeeService;

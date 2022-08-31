@@ -14,6 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class SkillsServiceImpl implements SkillsService {
     private final SkillsRepo skillsRepo;
+
     @Override
     public void addSkill(String name) {
         if (skillsRepo.existsByName(name)) {
