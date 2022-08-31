@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet id=" create skills table" author="Vlad">
+        <createTable tableName="skills">
+            <column name="skill_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <insert tableName="skills">
+            <column name="skill_id" value="1">
+            </column>
+            <column name="name" value="Java">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="2">
+            </column>
+            <column name="name" value="JavaEE">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="3">
+            </column>
+            <column name="name" value="Swing">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="4">
+            </column>
+            <column name="name" value="JPA">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="5">
+            </column>
+            <column name="name" value="JUnit">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="6">
+            </column>
+            <column name="name" value="Hibernate">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="7">
+            </column>
+            <column name="name" value="SQL">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="8">
+            </column>
+            <column name="name" value="JDBC">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="9">
+            </column>
+            <column name="name" value="HTML">
+            </column>
+        </insert>
+        <insert tableName="skills">
+            <column name="skill_id" value="10">
+            </column>
+            <column name="name" value="CSS">
+            </column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

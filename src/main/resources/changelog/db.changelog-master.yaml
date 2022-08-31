@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - include:
+      file: changelog/changeSet/create-resumes-table.xml
+  - include:
+      file: changelog/changeSet/create-badCompany-table.xml
+  - include:
+      file: changelog/changeSet/create-badEmployee-table.xml
+  - include:
+      file: changelog/changeSet/create-skills-table.xml
+  - include:
+      file: changelog/changeSet/create-resumeSkill-table.xml
+
+
+
+

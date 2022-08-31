@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet id=" create Bad Company table" author="Vlad">
+        <createTable tableName="bad_company">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <insert tableName="bad_company">
+            <column name="id" value="1">
+            </column>
+            <column name="name" value="QQQ">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="2">
+            </column>
+            <column name="name" value="QQE">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="3">
+            </column>
+            <column name="name" value="QQG">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="4">
+            </column>
+            <column name="name" value="QQGB">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="5">
+            </column>
+            <column name="name" value="QQN">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="6">
+            </column>
+            <column name="name" value="QQQZ">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="7">
+            </column>
+            <column name="name" value="QQ">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="8">
+            </column>
+            <column name="name" value="Q">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="9">
+            </column>
+            <column name="name" value="W">
+            </column>
+        </insert>
+        <insert tableName="bad_company">
+            <column name="id" value="10">
+            </column>
+            <column name="name" value="W">
+            </column>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

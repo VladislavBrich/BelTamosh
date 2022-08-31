@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet id=" create Bad Company table" author="Vlad">
+        <createTable tableName="bad_employee">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="full_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <insert tableName="bad_employee">
+            <column name="id" value="1">
+            </column>
+            <column name="full_name" value="Vlad">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="2">
+            </column>
+            <column name="full_name" value="Vladislav">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="3">
+            </column>
+            <column name="full_name" value="Vladimir">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="4">
+            </column>
+            <column name="full_name" value="Vladyxa">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="5">
+            </column>
+            <column name="full_name" value="Vllad">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="6">
+            </column>
+            <column name="full_name" value="Vladd">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="7">
+            </column>
+            <column name="full_name" value="Vladdd">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="8">
+            </column>
+            <column name="full_name" value="Vlaaad">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="9">
+            </column>
+            <column name="full_name" value="Vladdiss">
+            </column>
+        </insert>
+        <insert tableName="bad_employee">
+            <column name="id" value="10">
+            </column>
+            <column name="full_name" value="Anya">
+            </column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

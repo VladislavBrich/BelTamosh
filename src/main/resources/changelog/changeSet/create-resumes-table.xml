@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet id=" create resume table" author="Vlad">
+        <sql>CREATE TYPE categories AS ENUM('FirstPriority', 'SecondPriority', 'LastPriority', 'Rejection')</sql>
+        <createTable tableName="resumes">
+            <column name="resume_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="full_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="previous_job" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="desired_position" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="skill_level" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="salary" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="categories" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

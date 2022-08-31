@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:object="${resume}" name="form" class="mt-5" >
+    <h3>ФИО</h3>
+    <input name="fullName" type="text">
+    <h3>предыдущее место работы</h3>
+    <input type="text" name="previousJob">
+    <h3>желаемая должность</h3>
+    <input type="text" name="desiredPosition">
+    <h3>Уровень навыка</h3>
+    <select name="skillLevel">
+        <option>Junior</option>
+        <option>Middle</option>
+        <option>Senior</option>
+    </select>
+    <h3>Желаемая зарплата</h3>
+    <input type="number" name="salary">
+    <div>
+        <h3>Перечень технологий</h3>
+        <ul>
+            <li th:each="task: ${allSkills}">
+<!--                <span th:text="| ${task.name}|"></span>-->
+                <input type="checkbox" th:value="${task.id}" name="skills" >
+                <label th:text="${task.name}"></label>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+
+    <h3>Краткий рассказ о себе</h3>
+    <input type="text" name="description">
+    <button type="submit">Отправить ответ</button>
+</form>
+</body>
+</html>
